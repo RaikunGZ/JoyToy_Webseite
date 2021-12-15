@@ -44,9 +44,14 @@ header
         height: 100%;
     }
 
+        .header_container:first-child
+        {
+           padding-top: 1rem;
+        }
+
         img[alt="JoyToy Logo"]
         {
-            width: 250px;
+            width: 170px;
         }
 
         .header_center
@@ -62,7 +67,9 @@ header
             {
                 width: 30rem;
                 height: 3rem;
+                font-size: 2rem;
                 margin: 1rem;
+                padding: 1rem;
                 border-radius: 30px;
             }
 
@@ -101,47 +108,53 @@ nav
     align-items: center;
 }
 
-nav ul
-{
-    width: 100%;
-    display: flex;
-    
-    justify-content: center;
-}
+    nav ul
+    {
+        width: 100%;
+        display: flex;
+        
+        justify-content: center;
+    }
 
-nav ul li
-{
-    width: 13%;
-    list-style: none;
-}
+        nav ul li
+        {
+            width: 12%;
+            margin-right: 2.5rem;
+            list-style: none;
+        }
 
-nav ul li a
-{
-    color: #eee;;
-    font-size: 2rem;
-    font-weight: bold;
-    text-decoration: none;
-}
+            nav ul li a
+            {
+                color: #eee;;
+                font-size: 2rem;
+                font-weight: bold;
+                text-decoration: none;
+            }
 
-#wl::before
-{
-    font-family: "Font Awesome 5 Free";
-    content: "\f004";
-    color: #eee;
-    font-size: 2.5rem;
-    font-weight: 900;
-    margin-right: 1rem;
-}
+            #spacer
+            {
+                width: 5%;
+            }
 
-#wk::before
-{
-    font-family: "Font Awesome 5 Free";
-    content: "\f290";
-    color: #eee;
-    font-size: 2.5rem;
-    font-weight: 900;
-    margin-right: 1rem;
-}
+                #wl::before
+                {
+                    font-family: "Font Awesome 5 Free";
+                    content: "\f004";
+                    color: #eee;
+                    font-size: 2.5rem;
+                    font-weight: 900;
+                    margin-right: 1rem;
+                }
+
+                #wk::before
+                {
+                    font-family: "Font Awesome 5 Free";
+                    content: "\f290";
+                    color: #eee;
+                    font-size: 2.5rem;
+                    font-weight: 900;
+                    margin-right: 1rem;
+                }
 
 main
 {
@@ -162,6 +175,7 @@ footer
     #footer_an
     {
         grid-row: 1/5;
+        grid-row: 7/8;
     }
 
 /* Shop Sections */
@@ -186,18 +200,73 @@ footer
     gap: 15px;
     row-gap: 30px;
 }
-    .version
+
+#artikel1,#artikel2,#artikel3,#artikel4,#artikel5,#artikel6
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    background-color: #eee;
+    width: 100%;
+    height: 100%;
+    padding: 2.5rem;
+    border: solid 3px red;
+}
+
+    #artikel1 { grid-area: artikel1; }
+    #artikel2 { grid-area: artikel2; }
+    #artikel3 { grid-area: artikel3; }
+    #artikel4 { grid-area: artikel4; }
+    #artikel5 { grid-area: artikel5; }
+    #artikel6 { grid-area: artikel6; }
+
+    .artikel_left
     {
-        width: 100%;
-        height: 90%;
-        border: solid 1px;
+        width: 49%;
+    }
+
+    .artikel_right_top
+    {
+        width: 49%;
+        height: 25%;
+        padding: 2.5rem;
+    }
+
+    .artikel_right_bot1
+    {
+        width: 10%;
+        padding: 0.7rem;
+        position: relative;
+        top: -14rem;
     }
 
         input[id="buy"]
         {
             width: 5rem;
             height: 2.5rem;
+            font-size: 2rem;
+            padding: 0.3rem;
+            margin: auto;
         }
+
+    .artikel_right_bot2
+    {
+        display: flex;
+        flex-wrap: wrap;
+        width: 24%;
+        height: 25%;
+        position: relative;
+        top: -14rem;
+        text-align: center;
+    }
+
+        h3#preis
+        {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        
 
         #wk_in, #wl_in
         {
@@ -206,21 +275,14 @@ footer
             border: solid 2.5px var(--contentDark);
             border-radius: 30px;
             padding: 0.5rem;
-            margin: 1rem;
+            margin: 0.2rem;
             font-size: 1.7rem;
             font-weight: bolder;
+            height: 3.5rem;
         }
-
-
-    #artikel1{grid-area: artikel1;}
-    #artikel2{grid-area: artikel2;}
-    #artikel3{grid-area: artikel3;}
-    #artikel4{grid-area: artikel4;}
-    #artikel5{grid-area: artikel5;}
-    #artikel6{grid-area: artikel6;}
-
 
     section div img/*[name="ninjago"]*/
     {
-        width: 250px;
+        width: 100%;
+        order: 1;
     }
