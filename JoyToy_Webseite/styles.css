@@ -45,6 +45,11 @@ header
         height: 100%;
     }
 
+        img[alt="JoyToy Logo"]
+        {
+            width: 250px;
+        }
+
         .header_center
         {
             display: flex;
