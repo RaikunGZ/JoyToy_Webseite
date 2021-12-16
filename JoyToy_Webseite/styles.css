@@ -1,4 +1,5 @@
-:root {
+:root
+ {
   font-size: 62.5%;
   --bg: #fffae3;
   --contentDark: #473f33;
@@ -12,7 +13,8 @@
   text-decoration: none;
 }
 
-body {
+body 
+{
   background-color: var(--bg);
   color: var(--contentDark);
   display: grid;
@@ -35,12 +37,14 @@ header {
   background-color: #ded;
 }
 
-.header_container {
+.header_container 
+{
   display: flex;
   height: 100%;
 }
 
-.header_center {
+.header_center 
+{
   display: flex;
   width: 80%;
   justify-content: center;
@@ -48,27 +52,31 @@ header {
   padding: 0.3rem;
 }
 
-input[id="searchbar"] {
+input[id="searchbar"] 
+{
   width: 30rem;
   height: 3rem;
   margin: 1rem;
   border-radius: 30px;
 }
 
-i {
+i
+ {
   color: var(--icon);
   margin: 1rem;
   font-size: 3rem;
 }
 
-.header_reght {
+.header_reght 
+{
   display: flex;
   justify-content: center;
   align-items: flex-end;
 }
 
 button[id="login"],
-button[id="register"] {
+button[id="register"] 
+{
   background-color: transparent;
   color: var(--contentDark);
   border: solid 2.5px;
@@ -94,46 +102,53 @@ nav ul {
   justify-content: center;
 }
 
-nav ul li {
+nav ul li 
+{
   width: 13%;
   list-style: none;
 }
 
-nav ul li a {
+nav ul li a
+ {
   color: var(--contentDark);
   font-size: 2rem;
   font-weight: bold;
   text-decoration: none;
 }
 
-main {
+main 
+{
   grid-area: main;
   grid-column: 2/4;
   grid-row: 3/7;
   background-color: gray;
 }
 
-footer {
+footer 
+{
   grid-area: footer;
   grid-column: 1/5;
 }
 
 /* Ab Hier arbeiten*/
 
-.reg-main {
+.reg-main 
+{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 
   grid-template-areas: "reg-sec-links reg-sec-reght";
 }
-.reg-img {
+.reg-img 
+{
   object-fit: cover;
   width: 100%;
   height: 100%;
   mix-blend-mode: hard-light;
 }
 
-.reg-sec-links {
+.reg-sec-links 
+{
   /*  */
   grid-area: 1/1/2/2;
   background: linear-gradient(
@@ -144,7 +159,8 @@ footer {
   );
 }
 
-.reg-sec-right {
+.reg-sec-right 
+{
   grid-area: reg-sec-reght;
   display: flex;
   justify-content: center;
@@ -154,13 +170,15 @@ footer {
   background: linear-gradient(225deg, #f0be1be3, #48c26bb3, #c73131ea);
 }
 
-.reg-form label {
+.reg-form label 
+{
   font-size: 2rem;
   font-family: "Permanent Marker", cursive;
 
   color: rgb(61, 51, 51);
 }
-.reg-form input {
+.reg-form input 
+{
   width: 20em;
   height: 3em;
   border-radius: 50px;
@@ -169,27 +187,32 @@ footer {
   background: rgb(216, 215, 215);
   box-shadow: 1px 2px 2px rgb(47, 43, 43);
 }
-.reg-form input:hover {
+.reg-form input:hover 
+{
   background-color: #bdca3c;
 }
-#reg-h3 {
+#reg-h3 
+{
   padding: 2em;
   font-size: 2rem;
   font-family: "Permanent Marker", cursive;
   color: rgb(61, 50, 50);
 }
 
-.reg-checkbox {
+.reg-checkbox 
+{
   font-size: 2rem;
   font-family: "Permanent Marker", cursive;
   color: rgb(51, 42, 42);
 }
-.reg-i i {
+.reg-i i 
+{
   padding-left: 1em;
- 
+
   border-radius: 50px;
 }
-#reg-btn {
+#reg-btn 
+{
   font-size: 2rem;
   width: 18em;
   height: 3em;
@@ -202,25 +225,28 @@ footer {
   background-color: #beb53c;
   font-family: "Permanent Marker", cursive;
 }
-.reg-i i:hover {
+.reg-i i:hover
+ {
   color: rgb(35%, 69%, 44%);
   background-color: rgb(74%, 71%, 24%);
 }
-#reg-btn:hover {
+#reg-btn:hover 
+{
   background-color: #f37748;
 }
 
+input[id="plz"],
+label[for="plz"] 
+{
+  width: 12rem;
+}
+input[id="ort"],
+label[for="ort"] 
+{
+  width: 12rem;
+}
 
-input[id="plz"], label[for="plz"]
+label[for="ort"] 
 {
-width: 12rem;
-} 
-input[id="ort"], label[for="ort"]
-{
-width: 12rem;
-} 
-
-label[for="ort"]
-{
-  margin-left: 11.5rem; 
+  margin-left: 11.5rem;
 }
