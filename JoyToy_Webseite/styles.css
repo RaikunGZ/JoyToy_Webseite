@@ -188,6 +188,7 @@ footer
 }
 
 /* Ab Hier arbeiten*/
+/* Mojdeh */
  .start_seite{
     background-color: white;
     display: grid;
@@ -260,3 +261,4 @@ h3, p, .sty{
 .sec3{
     grid-area:3/1/4/4;  
 }
+/* Mojdeh */
