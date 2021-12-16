@@ -16,43 +16,17 @@
 
 body
 {
-<<<<<<< HEAD
-  background-color: var(--bg);
-  color: var(--contentDark);
-  display: grid;
-  grid-template-columns: 10% 1fr 1fr 10%;
-  grid-template-rows: 13vh 5vh 1fr 1fr 1fr 12vh;
-  grid-template-areas:
-=======
     background-color: var(--bg);
     color: var(--contentDark);
     display: grid;
     grid-template-columns: 10% 1fr 1fr 10%;
     grid-template-rows: 13vh 5vh 1fr 1fr 1fr 12vh;
     grid-template-areas:
->>>>>>> main
     "header header header header"
     ". nav nav ."
     ". main ."
     ". main ."
     "footer footer footer footer";
-<<<<<<< HEAD
-  font-size: 1.6rem;
-}
-
-header {
-  grid-area: header;
-  grid-column: 1/5;
-  grid-row: 1/2;
-  background-color: #ded;
-}
-
-.header_container 
-{
-  display: flex;
-  height: 100%;
-}
-=======
     font-size: 1.6rem;
 }
 
@@ -194,7 +168,6 @@ nav
                     font-weight: 900;
                     margin-right: 1rem;
                 }
->>>>>>> main
 
 .header_center 
 {
