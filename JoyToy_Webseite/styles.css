@@ -130,14 +130,11 @@ footer {
   object-fit: cover;
   width: 100%;
   height: 100%;
- 
-  z-index: 1;
   mix-blend-mode: hard-light;
 }
 
 .reg-sec-links {
-  width: 100%;
-  height: 100%;
+  /*  */
   grid-area: 1/1/2/2;
   background: linear-gradient(
     225deg,
