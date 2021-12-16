@@ -6,14 +6,15 @@
   --icon: #f37748;
 }
 
-* {
+*
+ {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
 }
 
-body 
+body
 {
   background-color: var(--bg);
   color: var(--contentDark);
@@ -26,7 +27,6 @@ body
     ". main ."
     ". main ."
     "footer footer footer footer";
-  /* height: 100vh; */
   font-size: 1.6rem;
 }
 
