@@ -16,17 +16,27 @@
 
 body
 {
+<<<<<<< HEAD
   background-color: var(--bg);
   color: var(--contentDark);
   display: grid;
   grid-template-columns: 10% 1fr 1fr 10%;
   grid-template-rows: 13vh 5vh 1fr 1fr 1fr 12vh;
   grid-template-areas:
+=======
+    background-color: var(--bg);
+    color: var(--contentDark);
+    display: grid;
+    grid-template-columns: 10% 1fr 1fr 10%;
+    grid-template-rows: 13vh 5vh 1fr 1fr 1fr 12vh;
+    grid-template-areas:
+>>>>>>> main
     "header header header header"
     ". nav nav ."
     ". main ."
     ". main ."
     "footer footer footer footer";
+<<<<<<< HEAD
   font-size: 1.6rem;
 }
 
@@ -42,6 +52,149 @@ header {
   display: flex;
   height: 100%;
 }
+=======
+    font-size: 1.6rem;
+}
+
+header
+{
+    grid-area: header;
+    grid-column: 1/5;
+    grid-row: 1/2;
+    background-color: #ded;
+}
+
+    .header_container
+    {
+        display: flex;
+        height: 100%;
+    }
+
+        .header_container:first-child
+        {
+           padding-top: 1rem;
+        }
+
+        img[alt="JoyToy Logo"]
+        {
+            width: 170px;
+        }
+
+        .header_center
+        {
+            display: flex;
+            width: 80%;
+            justify-content: center;
+            align-items: flex-end;
+            padding: 0.3rem;
+        }
+
+            input[id="searchbar"]
+            {
+                width: 30rem;
+                height: 3rem;
+                font-size: 2rem;
+                margin: 1rem;
+                padding: 1rem;
+                border-radius: 30px;
+                background-color: transparent; 
+                transition: background-color 5s;
+            }
+
+                input:focus
+                { 
+                    background-color: yellow;
+                    color: red; 
+                }
+
+            i
+            {
+                color: var(--icon);
+                margin: 1rem;
+                font-size: 3rem;
+            }
+
+        .header_right
+        {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+            button[id=login], button[id="register"]
+            {
+                background-color: transparent;
+                color: var(--contentDark);
+                border: solid 2.5px var(--contentDark);
+                border-radius: 30px;
+                padding: 0.5rem;
+                margin: 1rem;
+                font-size: 1.7rem;
+                font-weight: bolder;
+            }
+nav
+{
+    grid-area: nav;
+    background-color: rgb(55, 43, 223) ;
+    grid-column: 2/4;
+    grid-row: 2/3;
+    display: flex;
+    align-items: center;
+}
+
+    nav ul
+    {
+        width: 100%;
+        display: flex;
+        
+        justify-content: center;
+    }
+
+        nav ul li
+        {
+            width: 12%;
+            margin-right: 2.5rem;
+            list-style: none;
+        }
+
+            nav ul li a
+            {
+                color: #eee;
+                font-size: 2rem;
+                font-weight: bold;
+                text-decoration: none;
+            }
+
+            #spacer
+            {
+                width: 5%;
+            }
+
+            li a:hover
+            {
+                text-decoration: underline rgb(250, 37, 37);
+            }
+
+                #wl::before
+                {
+                    font-family: "Font Awesome 5 Free";
+                    content: "\f004";
+                    color: #eee;
+                    font-size: 2.5rem;
+                    font-weight: 900;
+                    margin-right: 1rem;
+                }
+
+                #wk::before
+                {
+                    font-family: "Font Awesome 5 Free";
+                    content: "\f290";
+                    color: #eee;
+                    font-size: 2.5rem;
+                    font-weight: 900;
+                    margin-right: 1rem;
+                }
+>>>>>>> main
 
 .header_center 
 {
@@ -69,68 +222,39 @@ i
 
 .header_reght 
 {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
+    grid-area: footer;
+    grid-column: 1/6;
+    
 }
 
-button[id="login"],
-button[id="register"] 
+    #footer_an
+    {
+        grid-row: 1/5;
+        grid-row: 7/8;
+    }
+
+/* Shop Sections */
+
+.s_main_content
 {
-  background-color: transparent;
-  color: var(--contentDark);
-  border: solid 2.5px;
-  border-radius: 30px;
-  padding: 0.5rem;
-  margin: 1rem;
-  font-size: 1.7rem;
-  font-weight: bolder;
-}
-nav {
-  grid-area: nav;
-  background-color: green;
-  grid-column: 2/4;
-  grid-row: 2/3;
-  display: flex;
-  align-items: center;
+    display: grid;
+    grid-column: 2/4;
+    grid-rows: 3/6;
 }
 
-nav ul {
-  width: 100%;
-  display: flex;
-
-  justify-content: center;
-}
-
-nav ul li 
+.s_main_section
 {
-  width: 13%;
-  list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+    "artikel1 artikel2"
+    "artikel3 artikel4"
+    "artikel5 artikel6";
+    padding: 2rem;
+    gap: 15px;
+    row-gap: 30px;
 }
-
-nav ul li a
- {
-  color: var(--contentDark);
-  font-size: 2rem;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-main 
-{
-  grid-area: main;
-  grid-column: 2/4;
-  grid-row: 3/7;
-  background-color: gray;
-}
-
-footer 
-{
-  grid-area: footer;
-  grid-column: 1/5;
-}
-
-/* Ab Hier arbeiten*/
 
 .reg-main 
 {
