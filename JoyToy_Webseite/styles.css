@@ -189,7 +189,7 @@ footer {
 }
 .reg-i i {
   padding-left: 1em;
-  padding-right: 1em;
+ 
   border-radius: 50px;
 }
 #reg-btn {
@@ -197,7 +197,8 @@ footer {
   width: 18em;
   height: 3em;
   border-radius: 50px;
-  padding: 2rem;
+  padding-left: 1em;
+  padding-right: 1em;
   margin: 1em;
   background: rgb(216, 215, 215);
   box-shadow: 1px 2px 2px rgb(47, 43, 43);
@@ -210,4 +211,19 @@ footer {
 }
 #reg-btn:hover {
   background-color: #f37748;
+}
+
+
+input[id="plz"], label[for="plz"]
+{
+width: 12rem;
+} 
+input[id="ort"], label[for="ort"]
+{
+width: 12rem;
+} 
+
+label[for="ort"]
+{
+  margin-left: 11.5rem; 
 }
